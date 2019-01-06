@@ -1,0 +1,9 @@
+{
+    "login.email" : "Email",
+    "login.email.required.message" : "Email is required.",
+    "login.password" : "Password",
+    "login.password.required.message" : "Password is required.",
+    "login.button.login" : "Login",
+    "login.language" : "Language",
+    "login.language.required.message" : "Language is required."
+}

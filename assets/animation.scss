@@ -1,0 +1,171 @@
+
+/*------------ANIMATION ZONE-------------*/
+/*---------------------------------------*/
+
+@keyframes bouncingButton {
+  25% {
+    width: 60px;
+    height: 60px;
+  }
+
+  75% {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/*------------Enter Animation------------*/
+/*---------------------------------------*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) scale3d(0,0,0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0.3;
+  }
+}
+@keyframes pushItem {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 60px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/*---------------------------------------*/
+/*------------Leave Animation------------*/
+/*---------------------------------------*/
+@keyframes zoomOut {
+  to {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -100%, 0) scale3d(0,0,0);
+  }
+}
+@keyframes slideOutUp {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes spliceItem {
+  from {
+    opacity: 1;
+  }
+
+  10% {
+    border-color: #fff;
+    max-height: 60px;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    max-height: 0;
+    border-color: #fff;
+  }
+}
+
+@keyframes slideOutToLeft {
+  60% {
+    transform: translateX(-100%);
+    max-height: 60px;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    max-height: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  60% {
+    transform: translateX(100%);
+    max-height: 60px;
+  }
+
+  100% {
+    transform: translateX(100%);
+    max-height: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideOutLeft {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*----------END ANIMATION ZONE-----------*/

@@ -1,0 +1,9 @@
+{
+    "login.email" : "Thư điện tử",
+    "login.email.required.message" : "Yêu cầu nhập email.",
+    "login.password" : "Mật khẩu",
+    "login.password.required.message" : "Yêu cầu nhập mật khẩu.",
+    "login.button.login" : "Đăng nhập",
+    "login.language" : "Ngôn ngữ",
+    "login.language.required.message" : "Vui lòng chọn một ngôn ngữ."
+}

@@ -1,0 +1,540 @@
+
+@mixin appearance($value) {
+    -webkit-appearance:     $value;
+    -moz-appearance:        $value;
+    -ms-appearance:         $value;
+    -o-appearance:          $value;
+    appearance:             $value;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+select {
+  cursor: pointer;
+}
+
+html {
+  overflow-y:auto !important;
+  height:100vh;
+}
+
+body {
+  font-family: 'Lato Web', Helvetica, "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+select {
+  -moz-appearance: none !important;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+a {
+  text-decoration: none;
+  color: #2ECC71;
+  cursor: pointer;
+
+  &:hover {
+    color: #239C56;
+  }
+}
+
+.top-nav {
+  padding: 10px;
+  float: right;
+  font-size: 14px;
+
+  .nav-link {
+    margin: 0 4px;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.2s;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.outline {
+      border: 2px solid #ecf0f1;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &.outline:hover {
+      border-color: #fff;
+    }
+  }
+}
+
+.form-group {
+  margin: 0 0 16px;
+
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+.btn:disabled {
+  cursor: no-drop;
+  background-color: #bdc3c7;
+
+  &:hover {
+    cursor: no-drop;
+    background-color: #bdc3c7;
+  }
+}
+
+.form-control {
+  &:disabled {
+    cursor: no-drop;
+    background-color: #bdc3c7 !important;
+
+    &:hover {
+      background-color: #bdc3c7 !important;
+    }
+  }
+  position: relative;
+  font-weight: 500;
+  color: #555;
+  font-family: inherit;
+  border: none;
+  padding: 12px 18px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #ccc;
+  transition: all 0.2s;
+
+  @include appearance(none);
+}
+
+select.form-control {
+  padding-right: 36px;
+  background: url("https://res.cloudinary.com/dfzgn2ufo/image/upload/v1471944261/caret-down_qprugs.png") no-repeat right;
+}
+
+.form-control {
+  &.success,
+  &:focus {
+    box-shadow: inset 0 0 0 1px #2ecc71;
+  }
+
+  &.info {
+    box-shadow: inset 0 0 0 1px #3498db;
+  }
+
+  &.danger {
+    box-shadow: inset 0 0 0 1px #e74c3c;
+  }
+
+  &.warning {
+    box-shadow: inset 0 0 0 1px #f1c40f;
+  }
+}
+
+select.form-control {
+  height: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #bdc3c7;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-group {
+  .btn {
+    float: right;
+    margin: 0 5px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn-outline {
+  color: #2ecc71;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #2ecc71;
+
+  &:hover {
+    color: #27ae60;
+    background-color: #ecf0f1;
+    box-shadow: inset 0 0 0 1px #27ae60;
+  }
+}
+
+label.btn {
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+}
+
+.btn-shadow {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  &.btn-block {
+    width: 100%;
+  }
+
+  &.btn-strong {
+    font-weight: 700;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2ecc71;
+
+  &:hover {
+    background-color: #239C56;
+  }
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f1c40f;
+
+  &:hover {
+    color: #fff;
+    background-color: #f39c12;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #3498db;
+
+  &:hover {
+    color: #fff;
+    background-color: #2980b9;
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #e74c3c;
+
+  &:hover {
+    color: #fff;
+    background-color: #c0392b;
+  }
+}
+
+.btn-default {
+  color: #333;
+  background-color: #bdc3c7;
+
+  &:hover {
+    background-color: #95a5a6;
+  }
+}
+
+.auth-link a {
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: #ecf0f1;
+  display: block;
+  margin: 6px 0;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+@import "footer";
+
+.text-primary {
+  color: #2ecc71 !important;
+
+  &:hover, &:active, &:focus {
+    color: #27ae60 !important;
+  }
+}
+
+.text-secondary {
+  color: #7f8c8d !important;
+
+  &:hover, &:active, &:focus {
+    color: #7f8c8d !important;
+  }
+}
+
+.text-default {
+  color: #000 !important;
+
+  &:hover, &:active, &:focus {
+    color: #000 !important;
+  }
+}
+
+.text-warning{
+  color: #f1c40f !important;
+
+  &:hover, &:active, &:focus {
+    color: #f39c12 !important;
+  }
+}
+
+.text-danger{
+  color: #e74c3c !important;
+
+  &:hover, &:active, &:focus {
+    color: #c0392b !important;
+  }
+}
+
+#map {
+  height: 400px;
+}
+
+.warning-message {
+  color: #FF7D3C;
+  display: none;
+  font-size: 13;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.error-message {
+  display: block;
+  margin: 4px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e74c3c;
+  margin: 6px 0;
+}
+
+.info-message {
+  display: block;
+  margin: 4px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #849192;
+  margin: 6px 0;
+}
+
+.messages {
+  margin-bottom: 12px;
+  .item {
+    font-size: 14px;
+    color: #ff7d3c;
+    font-weight: 700;
+  }
+}
+
+// Note
+
+.note {
+  margin: 0 0 20px;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+  border-radius: 0 4px 4px 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  @media screen and (max-width: 48em) {
+    p {
+      font-size: 12px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 95%;
+      font-weight: 500;
+    }
+
+  }
+
+  .close {
+    float: right;
+    margin: 0;
+    display: inline-block;
+    color: #ccc;
+    cursor: pointer;
+
+    &:hover {
+      color: #010407;
+    }
+  }
+}
+
+.note-info {
+  background-color: #f5f8fd;
+  border-color: #8bb4e7;
+  color: #010407;
+}
+
+.note-warning{
+  background-color:#faeaa9;
+  border-color:#f3cc31;
+  color: #000;
+}
+
+.note-danger{
+  background-color:#fef7f8;
+  border-color:#f0868e;
+  color:#210406;
+}
+
+// End note
+/*Scroll bar*/
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #bdc3c7;
+}
+
+/*End scroll bar*/
+
+/*Action Icon*/
+.icon-edit {
+  background-image: url("/img/icon/edit_black.png");
+
+  &:hover {
+    background-image: url("/img/icon/edit_green.png");
+  }
+}
+
+.icon-remove {
+  background-image: url("/img/icon/remove_black.png");
+
+  &:hover {
+    background-image: url("/img/icon/remove_green.png");
+  }
+}
+
+.icon-add {
+  background-image: url("/img/icon/add_black.png");
+
+  &:hover {
+    background-image: url("/img/icon/add_green.png");
+  }
+}
+
+.icon-return {
+  background-image: url("/img/icon/return_black.png");
+
+  &:hover {
+    background-image: url("/img/icon/return_green.png");
+  }
+}
+
+.icon-view {
+  background-image: url("/img/icon/view_black.png");
+
+  &:hover {
+    background-image: url("/img/icon/view_green.png");
+  }
+}
+/*End Action Icon*/
+
+//Metric icon
+.m-icon-white {
+  background-image: url("/img/icon/syncfusion-icons-white.png");
+}
+
+.m-icon-swapright {
+  background-position: -27px -10px;
+}
+
+.m-icon-swapdown{
+  background-position:-68px -10px
+}
+
+.m-icon-swapleft{
+  background-position:-8px -10px
+}
+
+.m-icon-swapup{
+  background-position:-46px -10px
+}
+
+.component-right {
+  text-align: right;
+  float: right;
+  clear: both;
+}
+
+@import "animation";

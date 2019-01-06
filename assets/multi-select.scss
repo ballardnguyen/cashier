@@ -1,0 +1,81 @@
+.multiSelect {
+  .caret {
+    display: none;
+  }
+
+  .helperContainer {
+    border-bottom: none;
+    padding: 8px;
+  }
+
+  .btn.reset {
+    float: right;
+  }
+
+  .line {
+    max-height: none;
+  }
+
+  .multiSelectItem {
+    display: flex;
+
+    &.selected {
+      background-image: none !important;
+      background-color: #2ecc71;
+      border-color: #2ecc71 !important;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    &:hover, &.multiSelectFocus {
+      background-image: none !important;
+      background-color: #27ae60;
+      border-color: #27ae60 !important;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    &:first-child {
+      border-radius: 3px 3px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 3px 3px;
+    }
+  }
+
+  .acol {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+}
+
+.isteven-single-select {
+  position: relative;
+  display: block;
+
+  a {
+
+    @extend .form-control;
+    @extend select.form-control;
+
+    display: block;
+    height: auto;
+  }
+
+  .buttonLabel {
+    color: #555;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  .checkboxLayer {
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}

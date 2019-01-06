@@ -1,0 +1,63 @@
+$tooltip-bg: #f7f7f9;
+$tooltip-color: #555;
+$tooltip-border: 1px solid #e1e1e8;
+
+.mat-tooltip {
+  background-color: $tooltip-bg !important;
+  color: $tooltip-color !important;
+  border: $tooltip-border !important;
+  font-size: 14px;
+  // padding: 4px 6px;
+
+  &.md-origin-bottom {
+    margin-top: 4px;
+  }
+  &.md-origin-top {
+    margin-bottom: 4px;
+  }
+}
+
+
+/*Tooltip*/
+.tooltip-block {
+  position: relative;
+
+  &:hover {
+    &:after {
+      background: $tooltip-bg;
+      border-radius: 4px;
+      border: $tooltip-border;
+      top: 25px;
+      color: $tooltip-color;
+      content: attr(tooltip);
+      text-align: center;
+      right: 0;
+      display: block;
+      padding: 5px 10px;
+      position: absolute;
+      z-index: 200;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+
+  &.block {
+    &:after {
+      right: 0;
+      top: calc(100% + 5px);
+      left: 0;
+      font-size: 14px;
+      padding: 12px 18px;
+      text-align: left;
+      min-width: 150px;
+      max-width: 250px;
+      width: 40vw;
+    }
+
+    &:before {
+      top: calc(100%);
+    }
+  }
+}
+/*End Tooltip*/

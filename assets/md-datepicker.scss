@@ -1,0 +1,33 @@
+
+md-datepicker {
+
+  &._md-datepicker-has-triangle-icon {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .md-datepicker-input-container input{
+    padding: 8px 9px;
+  }
+
+  &:not(.md-datepicker-open) {
+    .md-datepicker-input-container {
+      position: relative;
+      border: none;
+
+      input {
+        @extend .form-control;
+      }
+    }
+  }
+
+  .md-datepicker-triangle-button.md-button.md-icon-button {
+    position: absolute;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

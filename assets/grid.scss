@@ -1,0 +1,283 @@
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-background {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.d-none {
+  display: none !important
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-inlie-block {
+  display: inline-block !important;
+}
+
+.flex-direction-row {
+  flex-direction: row !important;
+}
+
+.flex-direction-col {
+  flex-direction: column !important;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.flex-direction-col-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+.mb-auto {
+    margin-bottom: auto !important;
+}
+
+.pt-auto {
+    padding-top: auto !important;
+}
+
+.pb-auto {
+    padding-bottom: auto !important;
+}
+
+.pl-auto {
+    padding-left: auto !important;
+}
+
+.pr-auto {
+    padding-right: auto !important;
+}
+
+$base-margin: 6px;
+
+.ml-0 {
+    margin-left: $base-margin*0 !important;
+}
+
+.mr-0 {
+    margin-right: $base-margin*0 !important;
+}
+
+.mt-0 {
+    margin-top: $base-margin*0 !important;
+}
+
+.mb-0 {
+    margin-bottom: $base-margin*0 !important;
+}
+
+.pt-0 {
+    padding-top: $base-margin*0 !important;
+}
+
+.pb-0 {
+    padding-bottom: $base-margin*0 !important;
+}
+
+.pl-0 {
+    padding-left: $base-margin*0 !important;
+}
+
+.pr-0 {
+    padding-right: $base-margin*0 !important;
+}
+
+
+.ml-1 {
+    margin-left: $base-margin*1 !important;
+}
+
+.mr-1 {
+    margin-right: $base-margin*1 !important;
+}
+
+.mt-1 {
+    margin-top: $base-margin*1 !important;
+}
+
+.mb-1 {
+    margin-bottom: $base-margin*1 !important;
+}
+
+.pt-1 {
+    padding-top: $base-margin*1 !important;
+}
+
+.pb-1 {
+    padding-bottom: $base-margin*1 !important;
+}
+
+.pl-1 {
+    padding-left: $base-margin*1 !important;
+}
+
+.pr-1 {
+    padding-right: $base-margin*1 !important;
+}
+
+.ml-2 {
+    margin-left: $base-margin*2 !important;
+}
+
+.mr-2 {
+    margin-right: $base-margin*2 !important;
+}
+
+.mt-2 {
+    margin-top: $base-margin*2 !important;
+}
+
+.mb-2 {
+    margin-bottom: $base-margin*2 !important;
+}
+
+.pt-2 {
+    padding-top: $base-margin*2 !important;
+}
+
+.pb-2 {
+    padding-bottom: $base-margin*2 !important;
+}
+
+.pl-2 {
+    padding-left: $base-margin*2 !important;
+}
+
+.pr-2 {
+    padding-right: $base-margin*2 !important;
+}
+
+.ml-3 {
+    margin-left: $base-margin*3 !important;
+}
+
+.mr-3 {
+    margin-right: $base-margin*3 !important;
+}
+
+.mt-3 {
+    margin-top: $base-margin*3 !important;
+}
+
+.mb-3 {
+    margin-bottom: $base-margin*3 !important;
+}
+
+.pt-3 {
+    padding-top: $base-margin*3 !important;
+}
+
+.pb-3 {
+    padding-bottom: $base-margin*3 !important;
+}
+
+.pl-3 {
+    padding-left: $base-margin*3 !important;
+}
+
+.pr-3 {
+    padding-right: $base-margin*3 !important;
+}
+
+.ml-4 {
+    margin-left: $base-margin*4 !important;
+}
+
+.mr-4 {
+    margin-right: $base-margin*4 !important;
+}
+
+.mt-4 {
+    margin-top: $base-margin*4 !important;
+}
+
+.mb-4 {
+    margin-bottom: $base-margin*4 !important;
+}
+
+.pt-4 {
+    padding-top: $base-margin*4 !important;
+}
+
+.pb-4 {
+    padding-bottom: $base-margin*4 !important;
+}
+
+.pl-4 {
+    padding-left: $base-margin*4 !important;
+}
+
+.pr-4 {
+    padding-right: $base-margin*4 !important;
+}
+
+.ml-5 {
+    margin-left: $base-margin*5 !important;
+}
+
+.mr-5 {
+    margin-right: $base-margin*5 !important;
+}
+
+.mt-5 {
+    margin-top: $base-margin*5 !important;
+}
+
+.mb-5 {
+    margin-bottom: $base-margin*5 !important;
+}
+
+.pt-5 {
+    padding-top: $base-margin*5 !important;
+}
+
+.pb-5 {
+    padding-bottom: $base-margin*5 !important;
+}
+
+.pl-5 {
+    padding-left: $base-margin*5 !important;
+}
+
+.pr-5 {
+    padding-right: $base-margin*5 !important;
+}

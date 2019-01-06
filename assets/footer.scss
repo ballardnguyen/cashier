@@ -1,0 +1,39 @@
+.main-footer {
+  font-family: Lato, cursive;
+  font-weight: 700;
+  margin: 0;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .follow {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .social-links {
+      margin: 20px 0;
+    }
+
+    img {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .copyright {
+    margin-top: 24px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
